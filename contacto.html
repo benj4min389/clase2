@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div>
+    <header class="cabecera">
+        <div class="logo">
           mi producto  
         </div>
-        <nav>
+        <nav class="nav">
             <ul>
                 <li><a href="index.html">inicio</a></li>
+                <hr>
                 <li><a href="productos.html">productos</a></li>
+                <hr>
                 <li><a href="contacto.html">contacto</a></li>
+                <hr>
             </ul>
         </nav>
     </header>
-    <section>
-        <h1>contáctanos</h1>
-        <form method="post">
+    </header>
+    <section class="contacto">
+        <h1 class="contacto__titulo">contáctanos</h1>
+        <form method="post" class="contacto__formulario">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" required minlength="3" >
             <label for="correo" >Correo electrónico</label>

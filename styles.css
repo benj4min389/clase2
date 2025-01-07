@@ -1,4 +1,202 @@
-div{
-    color: green;
-    font-size: 20px;
+/*aplicar estilos a toda la pagina*/
+
+
+body{
+ font-family: Arial, sans-serif;
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ line-height: 1.9;
+ background-color: rgb(230, 132, 97);
+ color: darkslategrey;
 }
+/* header*/
+.cabecera{
+    background-color: lightblue;
+    color: rgb(155, 4, 67);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+}
+
+.nav ul li{
+    margin: 0 1rem;
+}
+.nav ul li a{
+    background-color: rgba(255, 255, 255, 0.555);
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 1s ease;
+}
+
+.nav ul li a:hover{
+    color: rgb(255, 0, 179);
+}
+
+/*footer*/
+footer{
+    background-color: darkseagreen;
+    color: rgb(64, 76, 87);
+    text-align: center;
+    padding: 0,5rem 0;
+    margin-top: 2rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/*index.html para el secction que esta en dicha pagina*/
+/*metodologia bem B:bloque E:elemento M:modoficador*/
+.principal{
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(to bottom, #007bff, #005b);
+    color: aquamarine;
+    
+
+}
+
+.principal__titulo{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.principal__parrafo{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.principal__btn-comprar{
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    padding: 0.8 1.5;
+    font-size: 1rem;            
+    cursor: cell;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.principal__btn-comprar:hover{
+    background-color: #e6b800;
+}
+
+
+/* productos.html es modificar el estilo de la tabla o tablas*/
+.productos__titulo{
+    text-align: center;
+    margin-top: 1.5rem;
+
+}
+
+.productos__tabla{
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 40px rgba(0,0,0,0.1);
+}
+
+.productos__tabla th, .productos__tabla td{
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.productos__tabla th{
+    background-color: #007bff;
+    color: #ddd;
+    font-weight: bold;
+}
+
+.productos__tabla tr:hover{
+    background-color: #f1f1f1;
+/*contacto */
+}
+.contacto{
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ddd;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border-radius: 10px;
+
+
+
+    
+        
+
+    
+}
+.contacto__titulo{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+.contacto__formulario{
+    display: block;
+}
+
+.contacto__formulario input, .contacto__formulario textarea, .contacto__formulario button{
+width: 100%;
+padding: 0.8rem 0rem;
+margin-bottom: 1rem;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 1rem;
+}
+
+.contacto__formulario input:focus,.contacto__formulario textarea:focus{
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgb(0,123,255,0.5);
+}
+.contacto__formulario textarea{
+    resize: vertical;
+    height: 100px;
+}
+.contacto__formulario button{
+    background-color: #007bff;
+    color: #ccc;
+    border: none;
+    cursor: crosshair;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+
+}
+.contacto__formulario button:hover{
+    background-color: #0056b3;
+}
+
+/*media query: nos permite trabajar en responsividad
+ lo que significa que se puede adaptar a cualquier dispositivo dirigiendonos a una pagina web*/
+
+ @media (max-width: 700px){
+    .cabecera{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav ul{
+        flex-direction: column;
+        padding: 0;
+
+    }
+    .nav ul li{
+        margin: 0.5rem 0;
+
+    }
+    .productos__tabla{
+        width: 100%;
+    }
+ }
