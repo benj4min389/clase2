@@ -20,13 +20,13 @@
     </header>
     <section>
         <h1>contáctanos</h1>
-        <form >
+        <form method="post">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre">
-            <label for="correo">Correo electrónico</label>
-            <input type="email" name="correo">
-            <label for="mensaje">mensaje</label>
-            <textarea name="mensaje"></textarea>
+            <input type="text" name="nombre" required minlength="3" >
+            <label for="correo" >Correo electrónico</label>
+            <input type="email" name="correo" required>
+            <label for="mensaje" >mensaje</label>
+            <textarea name="mensaje" required></textarea>
             <button type="submit">Enviar</button>
         </form>
     </section>
